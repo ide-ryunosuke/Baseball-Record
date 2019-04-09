@@ -1,24 +1,61 @@
-# README
+# Baseball results management app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It is an application to manage the batting score of baseball.
 
-Things you may want to cover:
+* Ruby version 2.3.1
 
-* Ruby version
+* Rails version 5.2.3
 
-* System dependencies
+## member table
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|score_id|integer||
+|team_id|integer||
+### Association
+- has_many :scores
+- belongs_to :group
 
-* Configuration
+## game table
+|Column|Type|Options|
+|------|----|-------|
+|game_name|string||
+### Association
+- has_many :scores
 
-* Database creation
+## score table
+|Column|Type|Options|
+|------|----|-------|
+|member_id|integer||
+|game_id|integer||
+|batting_average|integer||
+|plate_appearance|integer||
+|at_bat|integer||
+|hit|integer||
+|runs_batted_in|integer||
+|sacrafice|integer||
+|walk|integer||
+|strikeout|integer||
+|stolen_base|integer||
+|run|integer||
+|home_run|integer||
+|on_base_percentage|integer||
+### Association
+- belongs_to :member
+- belongs_to :game
 
-* Database initialization
+## team table
+|Column|Type|Options|
+|------|----|-------|
+|team_name|||
+### Association
+- has_many :groups
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## group table
+|Column|Type|Options|
+|------|----|-------|
+|group_name|string||
+|team_id|integer||
+### Association
+has_many :members
+belongs_to :team
