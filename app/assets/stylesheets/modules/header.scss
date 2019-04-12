@@ -13,16 +13,44 @@ header {
     position: relative;
     margin: 0 auto;
     padding: 0 30px;
-    .fa-baseball-ball {
-      font-size: 28px;
-      color:#1cbac8;
-    }
     &__left {
       font-size: 28px;
-      font-family: "lucida grande";
-      font-weight: bold;
-      color: #1cbac8;
-      line-height: 72px;
+      margin: 0;
+      float: left;
+      display: flex;
+      i {
+        line-height: 72px;
+        font-size: 24px;
+        margin-right: 7px;
+        cursor: pointer;
+        color: #1cbac8;
+      }
+      .title {
+        font-family: 'Amatic SC', cursive;
+        margin: 21px 0;
+        cursor: pointer;
+        color: #1cbac8;
+      }
+    }
+    &__right {
+      ul {
+        display: flex;
+        color: #1cbac8;
+        font-size: 14px;
+        float: right;
+        li {
+          margin: 17px 20px;
+          padding: 11px 10px;
+          border: solid 1px;
+          border-radius: 18px;
+        }
+        li:hover {
+          color: white;
+          background: orange;
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
