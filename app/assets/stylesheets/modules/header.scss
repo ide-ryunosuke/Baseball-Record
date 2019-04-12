@@ -35,14 +35,14 @@ header {
     &__right {
       ul {
         display: flex;
-        color: #1cbac8;
+        color: orange;
         font-size: 14px;
         float: right;
         li {
-          margin: 17px 20px;
-          padding: 11px 10px;
+          margin: 20px 15px;
+          padding: 8px 10px;
           border: solid 1px;
-          border-radius: 18px;
+          border-radius: 32px;
         }
         li:hover {
           color: white;
