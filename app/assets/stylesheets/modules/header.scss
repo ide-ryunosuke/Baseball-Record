@@ -1,0 +1,57 @@
+header {
+  position: relative;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 1001;
+  background: #fff;
+  height: 72px;
+  box-shadow: 0 0 6px -1px rgba(0,0,0,.36);
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 30px;
+    &__left {
+      font-size: 28px;
+      margin: 0;
+      float: left;
+      display: flex;
+      i {
+        line-height: 72px;
+        font-size: 24px;
+        margin-right: 7px;
+        cursor: pointer;
+        color: #1cbac8;
+      }
+      .title {
+        font-family: 'Amatic SC', cursive;
+        margin: 21px 0;
+        cursor: pointer;
+        color: #1cbac8;
+        font-weight: bold;
+      }
+    }
+    &__right {
+      ul {
+        display: flex;
+        color: orange;
+        font-size: 14px;
+        float: right;
+        li {
+          margin: 20px 15px;
+          padding: 8px 10px;
+          border: solid 1px;
+          border-radius: 32px;
+        }
+        li:hover {
+          color: white;
+          background: orange;
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
