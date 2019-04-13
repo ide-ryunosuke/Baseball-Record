@@ -52,6 +52,7 @@ group :development do
   gem 'erb2haml'
   gem "font-awesome-rails"
   gem "sprockets"
+  gem 'devise'
 end
 
 group :test do
