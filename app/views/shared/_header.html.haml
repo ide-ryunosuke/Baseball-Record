@@ -7,5 +7,12 @@
         Baseball Result Manager
     .container__right
       %ul
-        %li メンバーを追加
-        %li ログイン
+        - if user_signed_in?
+          %li メンバーを追加
+          = link_to destroy_user_session_path, method: :delete do
+            %li ログアウト
+        - else
+          = link_to new_user_registration_path do
+            %li 新規登録
+          = link_to new_user_session_path do  
+            %li ログイン
