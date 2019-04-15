@@ -1,5 +1,6 @@
 = render 'shared/header'
 
 .main-content
-  .no-member
-    ↑メンバーを追加しましょう
+  - if user_signed_in?
+    .no-member
+      ↑メンバーを追加しましょう
