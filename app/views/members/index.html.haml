@@ -1,7 +1,66 @@
 = render 'shared/header'
 
 .main-content
-  - if @member.length == 0
+  - if @member.length == 4
     .no-member
       メンバーを追加しましょう
-  = render 'shared/members'
+  %table
+    %thead
+      %tr
+        %th
+          メンバー名
+        %th
+          打率
+        %th
+          打席数
+        %th
+          打数
+        %th
+          安打
+        %th
+          打点
+        %th
+          犠打
+        %th
+          四死球
+        %th
+          三振
+        %th
+          盗塁
+        %th
+          得点
+        %th
+          本塁打
+        %th
+          出塁率
+
+    = render 'shared/members'
+
+    %tfoot
+      %tr
+        %td
+          トータル
+        %td
+          0
+        %td
+          0
+        %td
+          0
+        %td
+          0
+        %td
+          0
+        %td
+          0
+        %td
+          0
+        %td
+          0
+        %td
+          0
+        %td
+          0
+        %td
+          0
+        %td
+          0
