@@ -9,13 +9,41 @@
   margin-bottom:5vh;
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
   .no-member {
-    color: gray;
+    color: rgb(94, 109, 242);
     font-size: 20px;
     padding: 10px;
     text-align: center;
+    font-weight: bold;
   }
-  .members {
-    color: #1cbac8;
+  table {
+    color: gray;
+    width: 93vw;
+    text-align: center;
+    line-height: 50px;
     font-size: 20px;
+    thead {
+      color: white;
+      font-weight: bold;
+      background: rgb(94, 109, 242);
+    }
+    tbody {
+      td {
+        border: solid 1px gray;
+      }
+      .score {
+        color: gray;
+        cursor: pointer;
+        font-size: 15px;
+      }
+      .score:hover {
+        color: orange;
+      }
+    }
+    tfoot {
+      text-decoration: underline;
+      td {
+        border: solid 1px gray;
+      }
+    }
   }
 }

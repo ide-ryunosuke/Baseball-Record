@@ -35,21 +35,22 @@ It is an application to manage the batting score of baseball.
 |------|----|-------|
 |user_id|integer||
 |member_id|integer||
-|batting_average|integer|default: 0|
-|plate_appearance|integer|default: 0|
-|at_bat|integer|default: 0|
-|hit|integer|default: 0|
-|runs_batted_in|integer|default: 0|
-|sacrafice|integer|default: 0|
-|walk|integer|default: 0|
-|strikeout|integer|default: 0|
-|stolen_base|integer|default: 0|
-|run|integer|default: 0|
-|home_run|integer|default: 0|
-|on_base_percentage|integer|default: 0|
+|batting_average|integer|default: 0|      <!-- 打率 -->
+|plate_appearance|integer|default: 0|     <!-- 打席数 -->
+|at_bat|integer|default: 0|               <!-- 打数 -->
+|hit|integer|default: 0|                  <!-- 安打 -->
+|runs_batted_in|integer|default: 0|       <!-- 打点 -->
+|sacrafice|integer|default: 0|            <!-- 犠打 -->
+|walk|integer|default: 0|                 <!-- 四死球 -->
+|strikeout|integer|default: 0|            <!-- 三振 -->
+|stolen_base|integer|default: 0|          <!-- 盗塁 -->
+|run|integer|default: 0|                  <!-- 得点 -->
+|home_run|integer|default: 0|             <!-- 本塁打 -->
+|on_base_percentage|integer|default: 0|   <!-- 出塁率 -->
 ### Association
 - belongs_to :member
 - belongs_to :user
+
 
 ## teams table
 |Column|Type|Options|
