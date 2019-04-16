@@ -1,0 +1,32 @@
+.main-content-new {
+  background: #fff;
+  clear: both;
+  float: none;
+  width: 60vw;
+  padding: 20px 20px 20px 20px;
+  margin-left: 20vw;
+  margin-top: 18vh;
+  margin-bottom:5vh;
+  box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
+  color: gray;
+  font-size: 20px;
+  .field-new{
+    margin-top: 20px;
+    height: 55px;
+    width: 44vw;
+    font-size: 20px;
+  }
+  .button-new {
+    margin-left: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #1cbac8;
+    color: #1cbac8;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .button-new:hover {
+    background: #1cbac8;
+    color: white;
+  }
+}
