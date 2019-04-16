@@ -37,11 +37,11 @@ header {
     &__right {
       ul {
         display: flex;
-        color: rgb(94, 109, 242);
+        color: orange;
         font-size: 14px;
         float: right;
         a {
-          color: rgb(94, 109, 242);
+          color: orange;
         }
         li {
           margin: 20px 15px;
@@ -51,7 +51,7 @@ header {
         }
         li:hover {
           color: white;
-          background: rgb(94, 109, 242);
+          background: orange;
           cursor: pointer;
           font-weight: bold;
         }
