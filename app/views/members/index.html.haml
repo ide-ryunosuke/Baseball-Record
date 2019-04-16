@@ -1,6 +1,7 @@
 = render 'shared/header'
 
 .main-content
-  - if user_signed_in?
+  - if @member.length == 0
     .no-member
       メンバーを追加しましょう
+  = render 'shared/members'
