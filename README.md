@@ -20,14 +20,15 @@ It is an application to manage the batting score of baseball.
 ## members table
 |Column|Type|Options|
 |------|----|-------|
-|nickname|string|null: false|
-|score_id|integer||
+|nickname|string||
 |team_id|integer||
 |user_id|integer||
+|group_id|integer||
 ### Association
 - has_many :scores, dependent: :destroy
 - belongs_to :group
 - belongs_to :user
+- belongs_to :team
 
 ## scores table
 |Column|Type|Options|

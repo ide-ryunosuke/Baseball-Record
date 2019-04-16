@@ -1,5 +1,7 @@
 = render 'shared/header'
 
 .main-content
-  .no-member
-    ↑メンバーを追加しましょう
+  - if @member.length == 0
+    .no-member
+      メンバーを追加しましょう
+  = render 'shared/members'

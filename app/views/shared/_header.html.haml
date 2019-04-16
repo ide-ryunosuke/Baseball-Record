@@ -8,11 +8,16 @@
     .container__right
       %ul
         - if user_signed_in?
-          %li メンバーを追加
+          - if request.path_info == root_path
+            = link_to new_member_path do
+              %li メンバーを追加
+          - if request.path_info == new_member_path
+            = link_to root_path do
+              %li 戻る
           = link_to destroy_user_session_path, method: :delete do
             %li ログアウト
         - else
           = link_to new_user_registration_path do
             %li 新規登録
-          = link_to new_user_session_path do  
+          = link_to new_user_session_path do
             %li ログイン

@@ -1,0 +1,7 @@
+= render 'shared/header'
+
+.main-content-new
+  名前を入力
+  = form_for @member do |f|
+    = f.text_field :nickname, class: 'field-new'
+    = f.submit "メンバーを登録", class: 'button-new'
