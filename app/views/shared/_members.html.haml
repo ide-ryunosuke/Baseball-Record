@@ -33,6 +33,6 @@
         0
       %td
         0.000
-      = link_to new_member_score_path(member) do
-        %td.score
+      %td
+        = link_to new_member_score_path(member.id), class: 'score' do
           スコアを登録
