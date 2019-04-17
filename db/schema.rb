@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_16_052317) do
+ActiveRecord::Schema.define(version: 2019_04_17_102828) do
 
   create_table "members", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname"
@@ -19,6 +19,26 @@ ActiveRecord::Schema.define(version: 2019_04_16_052317) do
     t.integer "group_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "member_id"
+    t.integer "batting_average", default: 0
+    t.integer "plate_appearance", default: 0
+    t.integer "at_bat", default: 0
+    t.integer "hit", default: 0
+    t.integer "runs_batted_in", default: 0
+    t.integer "sacrafice", default: 0
+    t.integer "walk", default: 0
+    t.integer "strikeout", default: 0
+    t.integer "stolen_base", default: 0
+    t.integer "run", default: 0
+    t.integer "home_run", default: 0
+    t.integer "on_base_percentage", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "number_of_matches", default: 0
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

@@ -28,5 +28,7 @@
   .button-new:hover {
     background: rgb(94, 109, 242);
     color: white;
+    transition: background-color .5s;
+    transition: color .5s;
   }
 }

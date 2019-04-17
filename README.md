@@ -47,6 +47,7 @@ It is an application to manage the batting score of baseball.
 |run|integer|default: 0|                  <!-- 得点 -->
 |home_run|integer|default: 0|             <!-- 本塁打 -->
 |on_base_percentage|integer|default: 0|   <!-- 出塁率 -->
+|number_of_matches|integer|default: 0|    <!-- 試合数 -->
 ### Association
 - belongs_to :member
 - belongs_to :user
