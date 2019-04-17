@@ -1,72 +1,76 @@
 = render 'shared/header'
 
 .main-content
-  - if @member.length == 0
+  - if @member.length == 0 && user_signed_in?
     .no-member
       メンバーを追加しましょう
+  - unless user_signed_in?
+    .no-signin.no-member
+      ログインまたは新規登録をお願いします
 
-  %table
-    %thead
-      %tr
-        %th
-        %th.list
-          試合数
-        %th.list
-          打率
-        %th.list
-          打席数
-        %th.list
-          打数
-        %th.list
-          安打
-        %th.list
-          打点
-        %th.list
-          犠打
-        %th.list
-          四死球
-        %th.list
-          三振
-        %th.list
-          盗塁
-        %th.list
-          得点
-        %th.list
-          本塁打
-        %th.list
-          出塁率
-        %th
+  - if user_signed_in?
+    %table
+      %thead
+        %tr
+          %th
+          %th.list
+            試合数
+          %th.list
+            打率
+          %th.list
+            打席数
+          %th.list
+            打数
+          %th.list
+            安打
+          %th.list
+            打点
+          %th.list
+            犠打
+          %th.list
+            四死球
+          %th.list
+            三振
+          %th.list
+            盗塁
+          %th.list
+            得点
+          %th.list
+            本塁打
+          %th.list
+            出塁率
+          %th
 
-    = render 'shared/members'
+      = render 'shared/members'
 
-    %tfoot
-      %tr
-        %td
-          トータル
-        %td
-          0
-        %td
-          0.000
-        %td
-          0
-        %td
-          0
-        %td
-          0
-        %td
-          0
-        %td
-          0
-        %td
-          0
-        %td
-          0
-        %td
-          0
-        %td
-          0
-        %td
-          0
-        %td
-          0.000
-        %td
+      %tfoot
+        %tr
+          %td
+            トータル
+          %td
+            0
+          %td
+            0.000
+          %td
+            0
+          %td
+            0
+          %td
+            0
+          %td
+            0
+          %td
+            0
+          %td
+            0
+          %td
+            0
+          %td
+            0
+          %td
+            0
+          %td
+            0
+          %td
+            0.000
+          %td

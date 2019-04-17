@@ -54,6 +54,8 @@ header {
           background: orange;
           cursor: pointer;
           font-weight: bold;
+          transition: background-color .5s;
+          transition: color .5s;
         }
       }
     }

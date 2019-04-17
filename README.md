@@ -35,7 +35,6 @@ It is an application to manage the batting score of baseball.
 |------|----|-------|
 |user_id|integer||
 |member_id|integer||
-|batting_average|integer|default: 0|      <!-- 打率 -->
 |plate_appearance|integer|default: 0|     <!-- 打席数 -->
 |at_bat|integer|default: 0|               <!-- 打数 -->
 |hit|integer|default: 0|                  <!-- 安打 -->
@@ -46,7 +45,7 @@ It is an application to manage the batting score of baseball.
 |stolen_base|integer|default: 0|          <!-- 盗塁 -->
 |run|integer|default: 0|                  <!-- 得点 -->
 |home_run|integer|default: 0|             <!-- 本塁打 -->
-|on_base_percentage|integer|default: 0|   <!-- 出塁率 -->
+|number_of_matches|integer|default: 0|    <!-- 試合数 -->
 ### Association
 - belongs_to :member
 - belongs_to :user
