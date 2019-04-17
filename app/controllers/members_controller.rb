@@ -3,7 +3,7 @@ class MembersController < ApplicationController
   before_action :move_to_index, only: :new
 
   def index
-    @member = Member.where(user_id: current_user.id)
+    @member = Member.where(user_id: current_user&.id)
   end
 
   def new
