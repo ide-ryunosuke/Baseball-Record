@@ -37,23 +37,6 @@
       本塁打
       = f.text_field :home_run, class: 'field-score'
     = f.submit "スコアを登録", class: 'button-score'
-
-
-
-
-
--# |user_id|integer||
--# |member_id|integer||
--# |batting_average|integer|default: 0|      <!-- 打率 -->
--# |plate_appearance|integer|default: 0|     <!-- 打席数 -->
--# |at_bat|integer|default: 0|               <!-- 打数 -->
--# |hit|integer|default: 0|                  <!-- 安打 -->
--# |runs_batted_in|integer|default: 0|       <!-- 打点 -->
--# |sacrafice|integer|default: 0|            <!-- 犠打 -->
--# |walk|integer|default: 0|                 <!-- 四死球 -->
--# |strikeout|integer|default: 0|            <!-- 三振 -->
--# |stolen_base|integer|default: 0|          <!-- 盗塁 -->
--# |run|integer|default: 0|                  <!-- 得点 -->
--# |home_run|integer|default: 0|             <!-- 本塁打 -->
--# |on_base_percentage|integer|default: 0|   <!-- 出塁率 -->
--# |number_of_matches|integer|default: 0|    <!-- 試合数 -->
+    = button_to root_path do
+      .back-button
+        戻る
