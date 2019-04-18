@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_17_113759) do
+ActiveRecord::Schema.define(version: 2019_04_18_095203) do
 
   create_table "members", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_04_17_113759) do
     t.integer "home_run", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "sacrafice_fly", default: 0
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

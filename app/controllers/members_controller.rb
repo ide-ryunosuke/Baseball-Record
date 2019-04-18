@@ -10,6 +10,7 @@ class MembersController < ApplicationController
     @hit = score_user.sum(:hit)
     @runs_batted_in = score_user.sum(:runs_batted_in)
     @sacrafice = score_user.sum(:sacrafice)
+    @sacrafice_fly = score_user.sum(:sacrafice_fly)
     @walk = score_user.sum(:walk)
     @strikeout = score_user.sum(:strikeout)
     @stolen_base = score_user.sum(:stolen_base)
