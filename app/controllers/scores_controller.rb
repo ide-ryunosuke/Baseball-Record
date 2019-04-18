@@ -1,6 +1,8 @@
 class ScoresController < ApplicationController
   def new
     @member = Member.find(params[:member_id])
+    score_member = Score.where(member_id: @member.id)
+    @game_count = score_member.length + 1
     @score = Score.new
   end
 

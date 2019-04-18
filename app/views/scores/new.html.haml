@@ -3,6 +3,8 @@
 .score-form
   .member-name-score
     = @member.nickname
+  .member-game-count
+    = "#{@game_count}試合目"
   = form_for @score, url: member_scores_path do |f|
     .score-list
       打席数
