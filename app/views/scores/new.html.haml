@@ -40,6 +40,6 @@
       本塁打
       = f.text_field :home_run, class: 'field-score'
     = f.submit "スコアを登録", class: 'button-score'
-    = button_to root_path do
-      .back-button
+    = link_to root_path do
+      %button.back-button
         戻る
