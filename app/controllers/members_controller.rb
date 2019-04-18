@@ -19,8 +19,8 @@ class MembersController < ApplicationController
     @game_count = score_user.length
     batting_average = @hit.to_f / @at_bat
     @batting_average_round = batting_average.round(3)
-    # on_base = (@hit + @walk).to_f / (@at_bat + @walk + )
-    # @on_base_percentage
+    on_base = (@hit + @walk).to_f / (@at_bat + @walk + @sacrafice_fly)
+    @on_base_percentage =  on_base.round(3)
   end
   # 出塁率＝（安打数+四球数+死球数）÷（打数+四球数+死球数+犠飛数）
   #
