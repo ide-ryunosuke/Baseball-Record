@@ -8,7 +8,7 @@
     .no-signin.no-member
       ログインまたは新規登録をお願いします
 
-  - if user_signed_in?
+  - if user_signed_in? && @member.length >= 1
     %table
       %thead
         %tr
@@ -48,7 +48,7 @@
       %tfoot
         %tr
           %td
-            トータル
+            チーム合計
           %td
             = @game_count
           %td

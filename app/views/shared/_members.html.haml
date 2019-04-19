@@ -1,40 +1,36 @@
--# - @member.each do |m|
--#   .members
--#     = m.nickメンバー
-
 - @member.each do |member|
   %tbody
     %tr
       %td
         = member.nickname
       %td
-        0
+        = total_match(member.id)
       %td
-        0.000
+        = total_batting_average
       %td
-        0
+        = total_plate_appearance
       %td
-        0
+        = total_at_bat
       %td
-        0
+        = total_hit
       %td
-        0
+        = total_runs_batted_in
       %td
-        0
+        = total_sacrafice
       %td
-        0
+        = total_sacrafice_fly
       %td
-        0
+        = total_walk
       %td
-        0
+        = total_strikeout
       %td
-        0
+        = total_stolen_base
       %td
-        0
+        = total_run
       %td
-        0
+        = total_home_run
       %td
-        0.000
+        = total_on_base_percentage
       %td
         = link_to new_member_score_path(member.id), class: 'score' do
           スコアを登録
