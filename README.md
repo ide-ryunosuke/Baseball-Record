@@ -40,6 +40,7 @@ It is an application to manage the batting score of baseball.
 |hit|integer|default: 0|                  <!-- 安打 -->
 |runs_batted_in|integer|default: 0|       <!-- 打点 -->
 |sacrafice|integer|default: 0|            <!-- 犠打 -->
+|sacrafice_fly|integer|default: 0|        <!-- 犠飛 -->
 |walk|integer|default: 0|                 <!-- 四死球 -->
 |strikeout|integer|default: 0|            <!-- 三振 -->
 |stolen_base|integer|default: 0|          <!-- 盗塁 -->
