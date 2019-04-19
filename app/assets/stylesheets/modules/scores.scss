@@ -2,14 +2,17 @@
   background: #fff;
   clear: both;
   float: none;
-  width: 60vw;
+  width: 76vw;
   padding: 20px;
-  margin-left: 20vw;
+  margin-left: 12vw;
   margin-top: 15vh;
   margin-bottom:5vh;
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
   color: rgb(94, 109, 242);
   font-size: 20px;
+  .member-game-count {
+    float: right;
+  }
   .score-list {
     color: gray;
     font-size: 0;
@@ -22,7 +25,7 @@
       color: gray;
       text-align: center;
       margin-top: 30px;
-      margin-right: 8px;
+      margin-right: 10px;
     }
   }
   .button-score {
@@ -38,5 +41,20 @@
     color: white;
     transition: background-color .5s;
     transition: color .5s;
+  }
+  .back-button {
+    background-color: gray;
+    padding: 20px;
+    width: 122px;
+    height: 40px;
+    line-height: 0;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .back-button:hover {
+    background-color: lightgray;
   }
 }

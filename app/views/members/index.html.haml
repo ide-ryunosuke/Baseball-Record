@@ -8,7 +8,7 @@
     .no-signin.no-member
       ログインまたは新規登録をお願いします
 
-  - if user_signed_in?
+  - if user_signed_in? && @member.length >= 1
     %table
       %thead
         %tr
@@ -28,6 +28,8 @@
           %th.list
             犠打
           %th.list
+            犠飛
+          %th.list
             四死球
           %th.list
             三振
@@ -46,31 +48,33 @@
       %tfoot
         %tr
           %td
-            トータル
+            チーム合計
           %td
-            0
+            = @game_count
           %td
-            0.000
+            = @batting_average_round
           %td
-            0
+            = @plate_appearance
           %td
-            0
+            = @at_bat
           %td
-            0
+            = @hit
           %td
-            0
+            = @runs_batted_in
           %td
-            0
+            = @sacrafice
           %td
-            0
+            = @sacrafice_fly
           %td
-            0
+            = @walk
           %td
-            0
+            = @strikeout
           %td
-            0
+            = @stolen_base
           %td
-            0
+            = @run
           %td
-            0.000
+            = @home_run
+          %td
+            = @on_base_percentage
           %td

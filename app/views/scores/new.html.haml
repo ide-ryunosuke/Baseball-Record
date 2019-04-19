@@ -3,6 +3,8 @@
 .score-form
   .member-name-score
     = @member.nickname
+  .member-game-count
+    = "#{@game_count}試合目"
   = form_for @score, url: member_scores_path do |f|
     .score-list
       打席数
@@ -20,6 +22,9 @@
       犠打
       = f.text_field :sacrafice, class: 'field-score'
     .score-list
+      犠飛
+      = f.text_field :sacrafice_fly, class: 'field-score'
+    .score-list
       四死球
       = f.text_field :walk, class: 'field-score'
     .score-list
@@ -35,23 +40,6 @@
       本塁打
       = f.text_field :home_run, class: 'field-score'
     = f.submit "スコアを登録", class: 'button-score'
-
-
-
-
-
--# |user_id|integer||
--# |member_id|integer||
--# |batting_average|integer|default: 0|      <!-- 打率 -->
--# |plate_appearance|integer|default: 0|     <!-- 打席数 -->
--# |at_bat|integer|default: 0|               <!-- 打数 -->
--# |hit|integer|default: 0|                  <!-- 安打 -->
--# |runs_batted_in|integer|default: 0|       <!-- 打点 -->
--# |sacrafice|integer|default: 0|            <!-- 犠打 -->
--# |walk|integer|default: 0|                 <!-- 四死球 -->
--# |strikeout|integer|default: 0|            <!-- 三振 -->
--# |stolen_base|integer|default: 0|          <!-- 盗塁 -->
--# |run|integer|default: 0|                  <!-- 得点 -->
--# |home_run|integer|default: 0|             <!-- 本塁打 -->
--# |on_base_percentage|integer|default: 0|   <!-- 出塁率 -->
--# |number_of_matches|integer|default: 0|    <!-- 試合数 -->
+    = link_to root_path do
+      %button.back-button
+        戻る
