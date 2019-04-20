@@ -55,3 +55,11 @@
     }
   }
 }
+.score-delete {
+  color: gray;
+  cursor: pointer;
+  font-size: 15px;
+}
+.score-delete:hover {
+  color: red;
+}

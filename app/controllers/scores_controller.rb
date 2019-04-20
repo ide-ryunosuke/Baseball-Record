@@ -21,9 +21,12 @@ class ScoresController < ApplicationController
     @score.update(score_update_params)
     redirect_to member_path
   end
-  #
-  # def destroy
-  # end
+
+  def destroy
+    @score = Score.find(params[:member_id])
+    @score.destroy
+    redirect_to member_path
+  end
 
   private
   def score_params
