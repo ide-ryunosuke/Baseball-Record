@@ -2,7 +2,8 @@
   %tbody
     %tr
       %td
-        = member.nickname
+        = link_to member_path(member.id), class: 'member-name' do
+          = member.nickname
       %td
         = total_match(member.id)
       %td
