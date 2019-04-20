@@ -8,7 +8,7 @@
   margin-top: 12vh;
   margin-bottom:5vh;
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
-  .no-member {
+  .no-data {
     color: rgb(94, 109, 242);
     font-size: 20px;
     padding: 10px;
@@ -29,6 +29,13 @@
     tbody {
       td {
         border: solid 1px gray;
+      }
+      .member-name {
+        color: gray;
+        cursor: pointer;
+      }
+      .member-name:hover {
+        color: orange;
       }
       .score {
         color: gray;

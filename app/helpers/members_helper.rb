@@ -65,4 +65,20 @@ module MembersHelper
       ((@total_hit + @total_walk).to_f / (@total_at_bat + @total_walk + @total_sacrafice_fly)).round(3)
     end
   end
+
+  def batting_average_show(score)
+    if score.at_bat == 0 && score.hit == 0
+      0.0
+    else
+      (score.hit.to_f / score.at_bat).round(3)
+    end
+  end
+
+  def on_base_percentage_show(score)
+    if score.hit == 0 && score.walk == 0 && score.at_bat == 0 && score.sacrafice_fly == 0
+      0.0
+    else
+      ((score.hit + score.walk).to_f / (score.at_bat + score.walk + score.sacrafice_fly)).round(3)
+    end
+  end
 end

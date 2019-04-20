@@ -2,7 +2,7 @@
 
 .main-content
   - if @member.length == 0 && user_signed_in?
-    .no-member
+    .no-data
       メンバーを追加しましょう
   - unless user_signed_in?
     .no-signin.no-member
@@ -15,33 +15,7 @@
           %th
           %th.list
             試合数
-          %th.list
-            打率
-          %th.list
-            打席数
-          %th.list
-            打数
-          %th.list
-            安打
-          %th.list
-            打点
-          %th.list
-            犠打
-          %th.list
-            犠飛
-          %th.list
-            四死球
-          %th.list
-            三振
-          %th.list
-            盗塁
-          %th.list
-            得点
-          %th.list
-            本塁打
-          %th.list
-            出塁率
-          %th
+          = render 'shared/score-header'
 
       = render 'shared/members'
 
@@ -51,30 +25,4 @@
             チーム合計
           %td
             = @game_count
-          %td
-            = @batting_average_round
-          %td
-            = @plate_appearance
-          %td
-            = @at_bat
-          %td
-            = @hit
-          %td
-            = @runs_batted_in
-          %td
-            = @sacrafice
-          %td
-            = @sacrafice_fly
-          %td
-            = @walk
-          %td
-            = @strikeout
-          %td
-            = @stolen_base
-          %td
-            = @run
-          %td
-            = @home_run
-          %td
-            = @on_base_percentage
-          %td
+          = render 'shared/score-footer'

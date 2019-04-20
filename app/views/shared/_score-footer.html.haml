@@ -1,0 +1,33 @@
+%td
+  - if @hit == 0 && @at_bat == 0
+    = 0.0
+  - else
+    = @batting_average_round
+%td
+  = @plate_appearance
+%td
+  = @at_bat
+%td
+  = @hit
+%td
+  = @runs_batted_in
+%td
+  = @sacrafice
+%td
+  = @sacrafice_fly
+%td
+  = @walk
+%td
+  = @strikeout
+%td
+  = @stolen_base
+%td
+  = @run
+%td
+  = @home_run
+%td
+  - if @hit == 0 && @walk == 0 && @at_bat == 0 && @sacrafice_fly == 0
+    = 0.0
+  - else
+    = @on_base_percentage
+%td

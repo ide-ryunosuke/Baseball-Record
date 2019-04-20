@@ -1,0 +1,21 @@
+= render 'shared/header'
+
+.main-content
+  - if @score.length == 0 && user_signed_in?
+    .no-data
+      前のページからスコアを追加してください
+
+  - if user_signed_in? && @score.length >= 1
+    %table
+      %thead
+        %tr
+          %th
+          = render 'shared/score-header'
+
+      = render 'shared/members-show'
+
+      %tfoot
+        %tr
+          %td
+            合計
+          = render 'shared/score-footer'
