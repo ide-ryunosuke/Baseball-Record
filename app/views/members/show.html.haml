@@ -1,10 +1,12 @@
 = render 'shared/header'
 
 .head-content-show.main-content
-  = @member.nickname
+  = "#{@member.nickname} 個人成績"
+  %button.member-name-edit-btn
+    メンバー名変更
   = link_to member_path, method: :delete, class: 'member-destroy-btn' do
     %button.member-destroy-btn
-      メンバーを削除
+      メンバー削除
 
 
 .main-content-show
