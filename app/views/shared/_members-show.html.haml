@@ -30,5 +30,5 @@
       %td
         = on_base_percentage_show(score)
       %td
-        -# = link_to new_member_score_path(member.id), class: 'score' do
-        スコアを削除
+        = link_to edit_member_score_path(score), class: 'score' do
+          編集
