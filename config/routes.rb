@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   }
 
   resources :members do
-    resources :scores, only: [:new, :create]
+    resources :scores, only: [:new, :create, :edit, :update, :destroy]
   end
 end
