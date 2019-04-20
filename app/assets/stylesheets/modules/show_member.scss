@@ -1,11 +1,29 @@
 .head-content-show {
   margin-bottom: 3vh;
-  font-size: 22px;
+  font-size: 23px;
   color: gray;
+  width: 47vw;
+  .member-name-edit-btn {
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    border: solid 1px orange;
+    border-radius: 4px;
+    box-shadow: 1px 1px 0 1px rgba(0,0,0,.36);
+    background: orange;
+    padding: 1px 2px;
+    margin-left: 10vw;
+  }
+  .member-name-edit-btn:active {
+    box-shadow: 0 0 0 0 ;
+    margin-left: 10.1vw;
+    margin-top: 1px;
+  }
   .member-destroy-btn {
     cursor: pointer;
     font-size: 17px;
     color: gray;
+    margin-left: .5vw;
   }
   .member-destroy-btn:hover {
     color: red;
@@ -20,6 +38,7 @@
   margin-left: 2vw;
   margin-bottom:5vh;
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
+  border-radius: 3px;
   .no-data {
     color: rgb(94, 109, 242);
     font-size: 20px;

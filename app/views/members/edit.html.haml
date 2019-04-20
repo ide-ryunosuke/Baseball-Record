@@ -1,0 +1,7 @@
+= render 'shared/header'
+
+.main-content-new
+  名前を変更
+  = form_for @member do |f|
+    = f.text_field :nickname, class: 'field-new'
+    = f.submit "メンバー名変更", class: 'button-new'

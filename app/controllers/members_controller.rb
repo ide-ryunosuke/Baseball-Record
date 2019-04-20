@@ -58,9 +58,23 @@ class MembersController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @member = Member.find(params[:id])
+  end
+
+  def update
+    @member = Member.find(params[:id])
+    @member.update(member_update_params)
+    redirect_to member_path
+  end
+
   private
   def member_params
     params.require(:member).permit(:nickname).merge(user_id: current_user.id)
+  end
+
+  def member_update_params
+    params.require(:member).permit(:nickname)
   end
 
   def move_to_index
