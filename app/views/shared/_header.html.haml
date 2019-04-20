@@ -12,7 +12,7 @@
             = link_to new_member_path do
               %li メンバーを追加
           - if request.path_info != root_path
-            = link_to root_path do
+            = link_to :back do
               %li 戻る
           = link_to destroy_user_session_path, method: :delete do
             %li ログアウト
