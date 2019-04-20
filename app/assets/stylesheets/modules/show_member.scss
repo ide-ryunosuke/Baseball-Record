@@ -1,0 +1,68 @@
+.head-content-show {
+  margin-bottom: 3vh;
+  font-size: 22px;
+  color: gray;
+  .member-destroy-btn {
+    cursor: pointer;
+    font-size: 17px;
+    color: gray;
+  }
+  .member-destroy-btn:hover {
+    color: red;
+  }
+}
+.main-content-show {
+  background: #fff;
+  clear: both;
+  float: none;
+  width: 96vw;
+  padding: 20px 20px 20px 20px;
+  margin-left: 2vw;
+  margin-bottom:5vh;
+  box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
+  .no-data {
+    color: rgb(94, 109, 242);
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  table {
+    color: gray;
+    width: 93vw;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    thead {
+      color: white;
+      font-weight: bold;
+      background: rgb(94, 109, 242);
+    }
+    tbody {
+      td {
+        border: solid 1px gray;
+      }
+      .member-name {
+        color: gray;
+        cursor: pointer;
+      }
+      .member-name:hover {
+        color: orange;
+      }
+      .score {
+        color: gray;
+        cursor: pointer;
+        font-size: 15px;
+      }
+      .score:hover {
+        color: orange;
+      }
+    }
+    tfoot {
+      text-decoration: underline;
+      td {
+        border: solid 1px gray;
+      }
+    }
+  }
+}

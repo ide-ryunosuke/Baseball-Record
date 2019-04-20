@@ -1,6 +1,13 @@
 = render 'shared/header'
 
-.main-content
+.head-content-show.main-content
+  = @member.nickname
+  = link_to member_path, method: :delete, class: 'member-destroy-btn' do
+    %button.member-destroy-btn
+      メンバーを削除
+
+
+.main-content-show
   - if @score.length == 0 && user_signed_in?
     .no-data
       前のページからスコアを追加してください

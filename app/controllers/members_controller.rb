@@ -33,6 +33,7 @@ class MembersController < ApplicationController
   end
 
   def show
+    @member = Member.find(params[:id])
     @score = Score.where(member_id: params[:id])
     @plate_appearance = @score.sum(:plate_appearance)
     @at_bat = @score.sum(:at_bat)
@@ -49,6 +50,12 @@ class MembersController < ApplicationController
     @batting_average_round = batting_average.round(3)
     on_base = (@hit + @walk).to_f / (@at_bat + @walk + @sacrafice_fly)
     @on_base_percentage = on_base.round(3)
+  end
+
+  def destroy
+    @member = Member.find(params[:id])
+    @member.destroy
+    redirect_to root_path
   end
 
   private
