@@ -1,28 +1,30 @@
-= render 'shared/header'
+.no-login-image
 
-.main-content
-  - if @member.length == 0 && user_signed_in?
-    .no-data
-      メンバーを追加しましょう
-  - unless user_signed_in?
-    .no-signin.no-data
-      ログインまたは新規登録をお願いします
+  = render 'shared/header'
 
-  - if user_signed_in? && @member.length >= 1
-    %table
-      %thead
-        %tr
-          %th
-          %th.list
-            試合数
-          = render 'shared/score-header'
+  .main-content
+    - if @member.length == 0 && user_signed_in?
+      .no-data
+        メンバーを追加しましょう
+    - unless user_signed_in?
+      .no-signin.no-data
+        ログインまたは新規登録をお願いします
 
-      = render 'shared/members'
+    - if user_signed_in? && @member.length >= 1
+      %table
+        %thead
+          %tr
+            %th
+            %th.list
+              試合数
+            = render 'shared/score-header'
 
-      %tfoot
-        %tr
-          %td
-            チーム合計
-          %td
-            = @game_count
-          = render 'shared/score-footer'
+        = render 'shared/members'
+
+        %tfoot
+          %tr
+            %td
+              チーム合計
+            %td
+              = @game_count
+            = render 'shared/score-footer'
