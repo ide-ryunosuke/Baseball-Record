@@ -10,7 +10,7 @@
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
   border-radius: 3px;
   .no-data {
-    color: rgb(94, 109, 242);
+    color: #ea352d;;
     font-size: 20px;
     padding: 10px;
     text-align: center;
@@ -25,7 +25,7 @@
     thead {
       color: white;
       font-weight: bold;
-      background: rgb(94, 109, 242);
+      background: #ea352d;;
     }
     tbody {
       td {
@@ -36,7 +36,7 @@
         cursor: pointer;
       }
       .member-name:hover {
-        color: orange;
+        color: #0099e8;
       }
       .score {
         color: gray;
@@ -44,7 +44,7 @@
         font-size: 15px;
       }
       .score:hover {
-        color: orange;
+        color: #0099e8;
       }
     }
     tfoot {

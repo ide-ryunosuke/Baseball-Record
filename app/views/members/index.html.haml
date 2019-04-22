@@ -5,7 +5,7 @@
     .no-data
       メンバーを追加しましょう
   - unless user_signed_in?
-    .no-signin.no-member
+    .no-signin.no-data
       ログインまたは新規登録をお願いします
 
   - if user_signed_in? && @member.length >= 1

@@ -8,7 +8,7 @@
   margin-top: 15vh;
   margin-bottom:5vh;
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
-  color: rgb(94, 109, 242);
+  color: #ea352d;;
   font-size: 20px;
   .member-game-count {
     float: right;
@@ -31,13 +31,13 @@
   .button-score {
     padding: 7px 12px;
     font-size: 16px;
-    border: 1px solid orange;
-    color: orange;
+    border: 1px solid #0099e8;
+    color: #0099e8;
     cursor: pointer;
     margin-top: 30px;
   }
   .button-score:hover {
-    background: orange;
+    background: #0099e8;
     color: white;
     transition: background-color .5s;
     transition: color .5s;

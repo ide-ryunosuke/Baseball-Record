@@ -6,10 +6,10 @@
     cursor: pointer;
     font-size: 17px;
     color: white;
-    border: solid 1px orange;
+    border: solid 1px #0099e8;
     border-radius: 4px;
     box-shadow: 1px 1px 0 1px rgba(0,0,0,.36);
-    background: orange;
+    background: #0099e8;
     padding: 1px 2px;
     margin-left: 10vw;
   }
@@ -39,7 +39,7 @@
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
   border-radius: 3px;
   .no-data {
-    color: rgb(94, 109, 242);
+    color: #ea352d;;
     font-size: 20px;
     padding: 10px;
     text-align: center;
@@ -54,7 +54,7 @@
     thead {
       color: white;
       font-weight: bold;
-      background: rgb(94, 109, 242);
+      background: #ea352d;;
     }
     tbody {
       td {
@@ -65,7 +65,7 @@
         cursor: pointer;
       }
       .member-name:hover {
-        color: orange;
+        color: #0099e8;
       }
       .score {
         color: gray;
@@ -73,7 +73,7 @@
         font-size: 15px;
       }
       .score:hover {
-        color: orange;
+        color: #0099e8;
       }
     }
     tfoot {

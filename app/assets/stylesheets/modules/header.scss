@@ -24,24 +24,24 @@ header {
         font-size: 24px;
         margin-right: 7px;
         cursor: pointer;
-        color: rgb(94, 109, 242);
+        color: #ea352d;;
       }
       .title {
         font-family: 'Amatic SC', cursive;
         margin: 21px 0;
         cursor: pointer;
-        color: rgb(94, 109, 242);
+        color: #ea352d;;
         font-weight: bold;
       }
     }
     &__right {
       ul {
         display: flex;
-        color: orange;
+        color: #0099e8;
         font-size: 14px;
         float: right;
         a {
-          color: orange;
+          color: #0099e8;
         }
         li {
           margin: 20px 15px;
@@ -51,7 +51,7 @@ header {
         }
         li:hover {
           color: white;
-          background: orange;
+          background: #0099e8;
           cursor: pointer;
           font-weight: bold;
           transition: background-color .5s;
