@@ -1,5 +1,5 @@
 .main-content {
-  background: #fff;
+  background-color: black;
   clear: both;
   float: none;
   width: 96vw;
@@ -8,16 +8,18 @@
   margin-top: 12vh;
   margin-bottom:5vh;
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
-  border-radius: 3px;
+  border-radius: 5px;
+  background: rgba(0,0,0, 0.7);
+  position: absolute;
   .no-data {
-    color: #ea352d;;
+    color: #0099e8;
     font-size: 20px;
     padding: 10px;
     text-align: center;
     font-weight: bold;
   }
   table {
-    color: gray;
+    color: white;
     width: 93vw;
     text-align: center;
     line-height: 50px;
@@ -25,21 +27,22 @@
     thead {
       color: white;
       font-weight: bold;
-      background: #ea352d;;
+      background: #0099e8;
+      opacity: 0.8;
     }
     tbody {
       td {
-        border: solid 1px gray;
+        border: solid 1px white;
       }
       .member-name {
-        color: gray;
+        color: white;
         cursor: pointer;
       }
       .member-name:hover {
         color: #0099e8;
       }
       .score {
-        color: gray;
+        color: white;
         cursor: pointer;
         font-size: 15px;
       }
@@ -50,13 +53,13 @@
     tfoot {
       text-decoration: underline;
       td {
-        border: solid 1px gray;
+        border: solid 1px white;
       }
     }
   }
 }
 .score-delete {
-  color: gray;
+  color: white;
   cursor: pointer;
   font-size: 15px;
 }

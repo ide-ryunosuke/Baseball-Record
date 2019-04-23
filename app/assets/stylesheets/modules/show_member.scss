@@ -1,41 +1,47 @@
 .head-content-show {
   margin-bottom: 3vh;
   font-size: 23px;
-  color: gray;
+  color: white;
   .member-name-edit-btn {
     cursor: pointer;
     font-size: 17px;
-    color: white;
+    color: #0099e8;
     border: solid 1px #0099e8;
     border-radius: 4px;
-    box-shadow: 1px 1px 0 1px rgba(0,0,0,.36);
-    background: #0099e8;
     padding: 1px 2px;
     margin-left: 10vw;
+    background: rgba(0,0,0, 0.1);
   }
-  .member-name-edit-btn:active {
-    box-shadow: 0 0 0 0 ;
-    margin-left: 10.1vw;
-    margin-top: 1px;
+  .member-name-edit-btn:hover {
+    background: #0099e8;
+    color: #fff;
+    opacity: 0.8;
   }
   .member-destroy-btn {
     cursor: pointer;
     font-size: 17px;
-    color: gray;
+    color: red;
+    border: solid 1px red;
+    border-radius: 4px;
+    padding: 1px 2px;
+    background: rgba(0,0,0, 0.1);
     margin-left: .5vw;
   }
   .member-destroy-btn:hover {
-    color: red;
+    background: red;
+    color: #fff;
+    opacity: 0.8;
   }
 }
 .main-content-show {
-  background: #fff;
+  background: rgba(0,0,0, 0.7);
   clear: both;
   float: none;
   width: 96vw;
   padding: 20px 20px 20px 20px;
   margin-left: 2vw;
   margin-bottom:5vh;
+  margin-top: 24vh;
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
   border-radius: 3px;
   .no-data {
@@ -46,7 +52,7 @@
     font-weight: bold;
   }
   table {
-    color: gray;
+    color: white;
     width: 93vw;
     text-align: center;
     line-height: 50px;
@@ -54,21 +60,22 @@
     thead {
       color: white;
       font-weight: bold;
-      background: #ea352d;;
+      background: #ea352d;
+      opacity: 0.9;
     }
     tbody {
       td {
-        border: solid 1px gray;
+        border: solid 1px white;
       }
       .member-name {
-        color: gray;
+        color: white;
         cursor: pointer;
       }
       .member-name:hover {
         color: #0099e8;
       }
       .score {
-        color: gray;
+        color: white;
         cursor: pointer;
         font-size: 15px;
       }
@@ -79,7 +86,7 @@
     tfoot {
       text-decoration: underline;
       td {
-        border: solid 1px gray;
+        border: solid 1px white;
       }
     }
   }

@@ -1,32 +1,36 @@
 .main-content-new {
-  background: #fff;
+  background: rgba(0,0,0, 0.7);
   clear: both;
   float: none;
   width: 60vw;
   padding: 20px 20px 20px 20px;
   margin-left: 20vw;
-  margin-top: 18vh;
+  margin-top: 26vh;
   margin-bottom:5vh;
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
-  color: #ea352d;;
+  color: #ea352d;
   font-size: 20px;
+  font-weight: bold;
   .field-new{
     margin-top: 20px;
     height: 55px;
     width: 44vw;
     font-size: 20px;
+    background: rgba(0,0,0, 0.2);
+    color: #fff;
   }
   .button-new {
     margin-left: 20px;
     padding: 12px 20px;
     font-size: 16px;
-    border: 1px solid #ea352d;;
-    color: #ea352d;;
+    border: 1px solid #ea352d;
+    color: #ea352d;
     cursor: pointer;
     margin-top: 20px;
+    background: rgba(0,0,0, 0.2);
   }
   .button-new:hover {
-    background: #ea352d;;
+    background: #ea352d;
     color: white;
     transition: background-color .5s;
     transition: color .5s;
