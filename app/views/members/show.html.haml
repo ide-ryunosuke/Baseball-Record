@@ -1,31 +1,33 @@
-= render 'shared/header'
+.show-image
 
-.head-content-show.main-content
-  = "#{@member.nickname} 個人成績"
-  = link_to edit_member_path do
-    %button.member-name-edit-btn
-      メンバー名変更
-  = link_to member_path, method: :delete, class: 'member-destroy-btn' do
-    %button.member-destroy-btn
-      メンバー削除
+  = render 'shared/header'
+
+  .head-content-show.main-content
+    = "#{@member.nickname} 個人成績"
+    = link_to edit_member_path do
+      %button.member-name-edit-btn
+        メンバー名変更
+    = link_to member_path, method: :delete do
+      %button.member-destroy-btn
+        メンバー削除
 
 
-.main-content-show
-  - if @score.length == 0 && user_signed_in?
-    .no-data
-      前のページからスコアを追加してください
+  .main-content-show
+    - if @score.length == 0 && user_signed_in?
+      .no-data
+        前のページからスコアを追加してください
 
-  - if user_signed_in? && @score.length >= 1
-    %table
-      %thead
-        %tr
-          %th
-          = render 'shared/score-header'
+    - if user_signed_in? && @score.length >= 1
+      %table
+        %thead
+          %tr
+            %th
+            = render 'shared/score-header'
 
-      = render 'shared/members-show'
+        = render 'shared/members-show'
 
-      %tfoot
-        %tr
-          %td
-            合計
-          = render 'shared/score-footer'
+        %tfoot
+          %tr
+            %td
+              合計
+            = render 'shared/score-footer'
