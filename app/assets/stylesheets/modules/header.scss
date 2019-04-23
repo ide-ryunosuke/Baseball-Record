@@ -9,7 +9,7 @@ header {
   background: black;
   height: 72px;
   box-shadow: 0 0 6px -1px rgba(0,0,0,.36);
-  opacity: 0.5;
+  background: rgba(0,0,0, 0.5);
   .container {
     position: relative;
     margin: 0 auto;
@@ -25,7 +25,11 @@ header {
         font-size: 24px;
         margin-right: 7px;
         cursor: pointer;
-        color: #ea352d;;
+        color: #ea352d;
+        opacity: 0.9;
+      }
+      i:hover {
+        opacity: 1;
       }
       .title {
         font-family: 'Amatic SC', cursive;
@@ -33,6 +37,10 @@ header {
         cursor: pointer;
         color: #ea352d;
         font-weight: bold;
+        opacity: 0.9;
+      }
+      .title:hover {
+        opacity: 1.0;
       }
     }
     &__right {
@@ -51,6 +59,7 @@ header {
           border-radius: 32px;
         }
         li:hover {
+          opacity: 0.8;
           color: white;
           background: #0099e8;
           cursor: pointer;
