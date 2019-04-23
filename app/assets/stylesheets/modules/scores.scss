@@ -1,11 +1,11 @@
 .score-form {
-  background: #fff;
+  background: rgba(0,0,0, 0.7);
   clear: both;
   float: none;
   width: 76vw;
   padding: 20px;
   margin-left: 12vw;
-  margin-top: 15vh;
+  margin-top: 20vh;
   margin-bottom:5vh;
   box-shadow: 0 0 4px -1px rgba(0,0,0,.36);
   color: #ea352d;;
@@ -14,7 +14,7 @@
     float: right;
   }
   .score-list {
-    color: gray;
+    color: #fff;
     font-size: 0;
     font-size: 20px;
     display: table-cell;
@@ -22,10 +22,11 @@
       width: 20px;
       height: 30px;
       font-size: 18px;
-      color: gray;
+      color: #fff;
       text-align: center;
       margin-top: 30px;
       margin-right: 10px;
+      background: rgba(0,0,0, 0.1);
     }
   }
   .button-score {
@@ -35,12 +36,14 @@
     color: #0099e8;
     cursor: pointer;
     margin-top: 30px;
+    background: rgba(0,0,0, 0.1);
   }
   .button-score:hover {
     background: #0099e8;
     color: white;
     transition: background-color .5s;
     transition: color .5s;
+    opacity: 0.9;
   }
   .back-button {
     background-color: gray;
@@ -53,6 +56,7 @@
     color: white;
     margin-left: 20px;
     cursor: pointer;
+    opacity: 0.9;
   }
   .back-button:hover {
     background-color: lightgray;
