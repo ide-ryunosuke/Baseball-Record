@@ -52,10 +52,10 @@ group :development do
   gem 'erb2haml'
   gem "font-awesome-rails"
   gem "sprockets"
-  gem 'devise'
+  gem 'rails-i18n', '~> 5.1'
   gem 'devise-i18n'
   gem 'devise-i18n-views'
-  gem 'rails-i18n', '~> 5.1'
+  gem 'devise'
 end
 
 group :test do
@@ -68,6 +68,9 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'devise-i18n'
+  gem 'devise-i18n-views'
+  gem 'devise'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
